@@ -1,0 +1,11 @@
+WEB_PORT=
+WEB_IP=127.0.0.1
+
+NODE_PATH=.
+APPLICATION_ENV=development
+APPLICATION_NAME=athena-ccfe
+LOG_PATH=logs/athena-ccfe.log
+LOG_ENABLE_CONSOLE=true
+
+JWT_ENCRYPTION=abcdefghijklmnopqrstuvwxyz
+JWT_EXPIRATION=10000

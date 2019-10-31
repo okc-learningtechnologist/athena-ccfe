@@ -2,22 +2,18 @@
   "name": "athena-ccfe",
   "version": "0.0.1",
   "description": "A front-end intended to be a complete course catalog for instructor-led and distance learning delivery methods.",
-  "main": "main.js",
+  "main": "src/main.js",
   "private": true,
   "scripts": {
     "lint": "eslint --ext .js, .vue",
-    "test": "mocha -w",
-    "dev": "parcel index.html"
+    "dev": "parcel ./src/index.html --open",
+    "build": "parcel build ./src/index.html",
+    "clean": "rm -rf dist/"
   },
   "engines": {
     "node": ">= 0.10.17",
     "npm": ">= 6.11.3"
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 10"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/okc-learningtechnologist/athena-ccfe.git"
@@ -42,21 +38,25 @@
   "devDependencies": {
     "@vue/component-compiler-utils": "^3.0.0",
     "autoprefixer": "^9.7.0",
+    "babel-eslint": "^10.0.3",
     "chai": "^4.2.0",
     "cypress": "^3.5.0",
     "cypress-vue-unit-test": "^1.11.3",
     "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-loader": "^3.0.2",
+    "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^5.2.3",
     "mocha": "^6.2.2",
     "nyc": "^14.1.1",
     "parcel-bundler": "^1.12.4",
+    "prettier": "^1.18.2",
     "sinon": "^7.5.0",
-    "vue-template-compiler": "^2.6.10",
-    "vue-hot-reload-api": "^2.3.4"
+    "vue-hot-reload-api": "^2.3.4",
+    "vue-template-compiler": "^2.6.10"
   },
   "dependencies": {
     "axios": "^0.19.0",
     "vue": "^2.6.10"
-    
   }
 }
